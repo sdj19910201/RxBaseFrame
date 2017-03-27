@@ -1,0 +1,13 @@
+<resources>
+	<string name="app_name">Gank.io</string>
+	<string name="error_view_oops">Oops</string>
+	<string name="error_view_retry">RETRY</string>
+	<string name="just_now">Just now</string>
+	<string name="loading">Lodaing...</string>
+	<string name="reload">Click to reload</string>
+	<string name="share">Share</string>
+	<string name="openUrl">Open the browser</string>
+	<string name="copyUrl">Copy Url</string>
+	<string name="transition_name_addGank">transition_name_addGank</string>
+	<string name="transition_name_image">transition_name_image</string>
+</resources>

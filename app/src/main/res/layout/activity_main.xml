@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:id="@+id/coordinator"
+	tools:context=".view.activity.MainActivity">
+
+	<android.support.design.widget.AppBarLayout
+		android:id="@+id/appbar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:fadingEdge="none"
+		android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+		app:elevation="0dp">
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/statusbarHeight"/>
+		<android.support.v7.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/toolbar_height"
+			android:layout_below="@+id/statusBarBackground"
+			android:background="@color/colorPrimary"
+			android:fadingEdge="none"
+			android:minHeight="@dimen/toolbar_height"
+			android:title=""
+			app:layout_collapseMode="pin"
+			app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+
+		<android.support.design.widget.TabLayout
+			android:id="@+id/tabLayout"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/toolbar_height"/>
+	</android.support.design.widget.AppBarLayout>
+
+	<android.support.v4.view.ViewPager
+		android:id="@+id/viewPager"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+	<android.support.design.widget.FloatingActionButton
+		android:id="@+id/fab"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="right|bottom|end"
+		android:layout_marginBottom="15dp"
+		android:layout_marginRight="15dp"
+		android:clickable="true"
+		android:src="@mipmap/ic_add_white_24dp"
+		android:transitionName="@string/transition_name_addGank"
+		app:layout_behavior="org.jokar.gankio.widget.ScrollAwareFabBehavior"
+		app:pressedTranslationZ="12dp"/>
+</android.support.design.widget.CoordinatorLayout>
